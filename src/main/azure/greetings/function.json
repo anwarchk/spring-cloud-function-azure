@@ -1,0 +1,22 @@
+{
+	"scriptFile": "../spug-function-azure-1.0.0-SNAPSHOT-azure.jar",
+	"entryPoint": "functions.AzureApplicationHandler.execute",
+	"bindings": [
+		{
+			"type": "httpTrigger",
+			"name": "foo",
+			"direction": "in",
+			"authLevel": "anonymous",
+			"methods": [
+				"get",
+				"post"
+			]
+		},
+		{
+			"type": "http",
+			"name": "$return",
+			"direction": "out"
+		}
+	],
+	"disabled": false
+}
